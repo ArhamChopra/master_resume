@@ -1,0 +1,273 @@
+%-------------------------
+% Resume in Latex
+% Author : Arham Chopra
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{bm}
+\usepackage{tabularx}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.500in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemS}[1]{
+  \item\small{
+    {#1 \vspace{-4pt}}
+  }
+}
+
+
+\newcommand{\sectionExtraPoint}[1]{
+  \small{
+    * \scriptsize{#1}
+  } \vspace{-11pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \renewcommand{\arraystretch}{0.7}
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\ 
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-11pt}
+}
+
+\newcommand{\resumeSubheadingS}[3]{
+  \item
+    \begin{tabularx}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small{\textbf{\textit{#1}}}, \small{\textit{#2}} & \small{\textit{#3}} \\ 
+    \end{tabularx}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+\newcommand{\resumeSubItemS}[1]{\resumeItemS{#1}\vspace{-0.8pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\renewcommand{\arraystretch}{0.6}
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Arham Chopra} & \\
+  Senior Undergrduate & Email : 
+  \href{mailto:archop@iitk.ac.in}{archop@iitk.ac.in} \\
+  Department of Computer Science And Engineering & Contact No: (+91) 9415-940-618 \\
+  \href{https://arhamchopra11.bitbucket.io/}{Homepage: arhamchopra11.bitbucket.io} & \\
+\end{tabular*}\vspace{-11pt}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+\begin{tabularx}{\textwidth}{c l l r}
+\normalsize
+    \hspace{10mm}{2018 \hspace{10mm}} & Bachelor of Technology \hspace{20mm} & \textit{IIT Kanpur \hspace{30mm}} & {\textbf{{9.7*/10.0}}}\\
+    \hspace{10mm}{2014 \hspace{10mm}} & Intermediate(+2) & \textit{Emmanuel Mission School} \hspace{30mm} & {\textbf{{95.40 \%}}}\\
+    \hspace{10mm}{2012 \hspace{10mm}} & Matriculation & \textit{Choithram International School} \hspace{30mm}& {\textbf{{91.80 \%}}}\\
+\end{tabularx}
+  \vspace{2pt}
+  \hspace{\fill}\sectionExtraPoint{As calculated at the end of 6th semester}
+  \vspace{-10pt}
+
+\section{Scholatic Achievements}
+  \resumeSubHeadingListStart
+    \resumeSubItemS
+      {\textbf{All India Rank 114} in \textbf{IIT-JEE Advanced}, \textit{2014} among 150 thousand students}
+    \resumeSubItemS
+      {\textbf{All India Rank 588} in \textbf{IIT-JEE Mains}, \textit{2014} among 1.4 million students}
+    \resumeSubItemS
+      {Recipient of \textbf{Kishore Vaigyanik Protsahan Yojana Fellowship}, \textit{2014}}
+    \resumeSubItemS
+      {Among \textbf{Top $\textbf{1}\%$} in Rajasthan in \textbf{National Standard Examination in Physics}, \textit{2014}}
+    \resumeItemS
+      {\textbf{National Rank 81} in \textbf{National Science Talent Search Examination}, \textit{2014}}
+    \resumeSubItemS
+      {\textbf{International Rank 15} in $1^{st}$ level of \textbf{National Science Olympiad}, \textit{2014}}
+  \resumeSubHeadingListEnd
+  \vspace{-11pt}
+
+
+%-----------EXPERIENCE-----------------
+\section{Internships}
+  \resumeSubHeadingListStart
+    \vspace{-1pt}
+    \resumeSubheadingS
+      {Apache Kafka Library}{Nutanix, Bangalore}
+      {May-Jul 2017}
+      \resumeItemListStart
+        \resumeItemS
+          {Designed a framework for automating benchmarking of CPU, memory, throughput rate, etc. metrics for \textbf{Apache Kafka}\vspace{-11pt}}
+        \resumeItemS
+          {Built a library module to interact with Kafka in terms of message communication, CRUD operations on topics, and utility operations over the nodes like safe removal of nodes from a cluster, rearranging the topics over the cluster, etc.}
+        \resumeItemS
+          {Implemented APIs for reading data via different modes either in bulk or through a stream of messages via websockets}  
+      \resumeItemListEnd
+    
+    \resumeSubheadingS
+      {ACID Transactions in MongoDB}{Elanic, Bangalore}
+      {May-Jul 2016}
+      \resumeItemListStart
+        \resumeItemS
+          {Built a \textbf{node.js} module to support \textbf{ACID} transactions in \textbf{MongoDB} along with features like \textbf{savepoint, commit, rollback} by extending \textbf{Mongoose}. Used \textbf{Redis} to implement functionality of redo logs in \textbf{Oracle} and other features.}
+        \resumeItemS
+          {Built a \textbf{Restify.js} based back-end Barcode Scanner app and designed a website for the Elanic Premiere League event}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  \vspace{-13pt}
+
+\section{Projects}
+  \resumeSubHeadingListStart
+    \vspace{-1pt}
+    \resumeSubheadingS
+      {\href{https://bitbucket.org/arhamchopra11/almost-c-compiler}{Almost C Compiler}}{Course Project, CS335}
+      {Jan-May 2017}
+      \resumeItemListStart
+        \resumeItemS
+          {Implemented minimal features of a \textbf{C-MIPS compiler} in \textbf{PLY} and tested with programs as quicksort, merge sort, etc. \vspace{-11pt}}
+        \resumeItemS
+          {Implemented non-trivial features like \textbf{type-checking/casting, global array and standard I/O} with terminal}
+      \resumeItemListEnd
+
+   \resumeSubheadingS
+      {Finding Security Flaws in Zoobar Webserver}{Course Project, CS628}
+      {Jan-May 2017}
+      \resumeItemListStart
+        \resumeItemS
+          {Explored security flaws like buffer overflow attacks, CSRF, XSS, SQL injection, privileges separation in the Zoobar}
+      \resumeItemListEnd
+     
+    \resumeSubheadingS
+      {\href{https://github.com/tulsyan/railquery}{RailQuery}}{Course Project, CS315}
+      {Jan-May 2017}
+      \resumeItemListStart
+        \resumeItemS
+          {Designed an \textbf{ANNE stack} based rail enquiry website for answering queries like \textbf{trains between stations, train routes, connecting trains between stations, etc.} and optimized the response time using DB structure and indices}
+      \resumeItemListEnd
+      
+    \resumeSubheadingS
+      {\href{https://bitbucket.org/arhamchopra11/nachos-assignments}{NachOS}}{Course Project, CS330}
+      {Aug-Dec 2016}
+      \resumeItemListStart
+        \resumeItemS
+          {Implemented parts of the \textbf{Standard System Call Library}, different \textbf{process scheduling algorithms}, \textbf{virtual memory}, \textbf{dynamic page allocation strategies} and analyzed their effectiveness in different use cases on the NachOS}
+      \resumeItemListEnd
+      
+    \resumeSubheadingS
+      {\href{https://bitbucket.org/arhamchopra11/stockprediction}{Stock Market Prediction}}{Course Project, CS771}
+      {May-Jun 2016}
+      \resumeItemListStart
+        \resumeItemS
+          {Implemented 2 different ML models (RNN and SVM) to determine the rise/fall of stock market on the following day based on the data of the previous days and compare the results between them}
+      \resumeItemListEnd
+      
+    \resumeSubheadingS
+      {\href{https://bitbucket.org/arhamchopra11/voicecommandrecognition}{Voice Command Recognition}}{Robotics Club}
+      {May-Jun 2015}
+      \resumeItemListStart
+        \resumeItemS
+          {Developed a voice recognition system in Matlab and voice navigated a bot under different noise environments}
+        \resumeItemS
+          {Employed MFCC and DTW algorithm with noise filters to recognize vocal commands and perform actions accordingly}
+      \resumeItemListEnd
+      
+    \resumeSubheadingS
+      {Other Projects}{}
+      {}
+      \resumeItemListStart
+        \resumeItemS
+          {Meetup Scheduler(CS252), The Pascal's Triangle(TA201), The Flying Raptor(TA202)}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  \vspace{-13pt}
+
+
+%-----------PROJECTS-----------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages}
+      {
+      \begin{tabular*}{0.65\textwidth}{l@{\extracolsep{\fill}} l@{\extracolsep{\fill}}}
+        C, C++, Python, Bash &
+        \textit{Familiar:} JavaScript, Scala, SQL, HTML/CSS
+      \end{tabular*}
+      }
+    \resumeSubItem{Tools}
+      {Git, Vim, Matlab, Octave, \LaTeX, Postman, Robomongo}
+    \resumeSubItem{Databases and Operating Systems}
+      {MongoDB, Redis, MySQL, SQLite, Neo4j, Windows, Linux \vspace{-3pt}}
+  \resumeSubHeadingListEnd
+
+\section{Relevant Courses}
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}} l@{\extracolsep{\fill}} l@{\extracolsep{\fill}} l@{\extracolsep{\fill}}}
+     \small{Randomized Algorithms} &  \small{Computer Systems and Security} & \small{Compilers} & \small{Databases} \\
+     \small{Design and Analysis of Algorithms} & \small{Theory of Computation} & \small{Operating Systems} & \small{Machine Learning Techniques} \\
+     \small{Data Structures and Algorithms} & \small{Logic} & \small{Discrete Mathematics} & \small{Abstract Algerbra}\\
+     \small{*Probabilistic Machine Learning} & \small{*Computer Networks} & \small{*Visual Recognition} & \small{Probability and Statistics}\\ 
+\end{tabular*}\\
+\hspace{\fill}\sectionExtraPoint{Currently Ongoing}
+\vspace{-8pt}
+  
+\section{Extracurriculars \& Non-Technical Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItemS
+      {\textbf{Teacing Assistant} in course $ESO207$ under Professor Sumit Ganguly}
+    \resumeSubItemS
+      {$\bm{1^{st}}$ prize in \textbf{Autodesk Fusion $\textbf{360}$ Challenge} in Uttar Pradesh}
+    \resumeSubItemS
+      {$\bm{2^{nd}}$ \textbf{position overall} as well as in \textbf{Embedded} event in $\bm{4^{th}}$ \textbf{Inter-IIT Tech Meet} representing \textbf{IIT Kanpur}}
+    \resumeSubItemS
+      {$\bm{2^{nd}}$ and $\bm{4^{th}}$ position as well as in $\bm{51^{st}}$ and $\bm{52^{nd}}$ \textbf{Inter-IIT Aquatics Meet} representing \textbf{IIT Kanpur} respectively}
+    \resumeSubItemS
+      {Senior Marketing Executive in \textbf{Techkriti'17} and Company Coordinator for \textbf{Student Placement Office} in 2016-2017}
+  \resumeSubHeadingListEnd
+
+\end{document}
