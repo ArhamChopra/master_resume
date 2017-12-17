@@ -1,0 +1,82 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[11pt, a4paper]{awesome-cv}
+
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+% \definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+\headersocialsep[\quad\textbar\quad]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     3rd party packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Needed to divide into several files
+\usepackage{import}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Essentials
+\name{Arham}{Chopra}
+\address{F-202, Hall 1, Indian Institute of Technology Kanpur, Kanpur, Uttar Pradesh, 208016, India}
+\mobile{(+91) 975-290-2438} 
+%%% Social
+\email{arhamschopra@gmail.com}
+\homepage{arhamchopra11.bitbucket.io}
+% \github{arhamschopra}
+\bitbucket{arhamchopra11}
+\linkedin{arhamschopra}
+%%% Optionals
+\position{Senior Undergraduate{\enskip\cdotp\enskip}Computer Science and Engineering}
+\quote{``I have no special talents. I am only passionately curious."}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Make a footer for CV with three arguments(<left>, <center>, <right>)
+\makecvfooter
+  {}
+  {Arham Chopra, Résumé}
+  {\thepage}
+
+\begin{document}
+%%% Make a header for CV with personal data
+\makecvheader
+
+%%% Import contents
+\import{\sectiondir}{education.tex}
+\import{\sectiondir}{honors.tex}
+\import{\sectiondir}{experience.tex}
+\import{\sectiondir}{projects.tex}
+\import{\sectiondir}{skills.tex}
+\import{\sectiondir}{courses.tex}
+\import{\sectiondir}{extracurricular.tex}
+% \import{\sectiondir}{presentation.tex}
+% \import{\sectiondir}{writing.tex}
+% \import{\sectiondir}{committees.tex}
+
+\end{document}
